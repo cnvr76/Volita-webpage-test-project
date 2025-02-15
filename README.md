@@ -84,7 +84,6 @@ We welcome all contributions! 🚀
 
 ## 📧 Contact
 
-For inquiries, reach out via **[email@example.com](mailto:kirillkolot8@gmail.com)** or open an issue in this repository.  
+For inquiries, reach out via **[kirillkolot8@gmail.com](mailto:kirillkolot8@gmail.com)** or open an issue in this repository.  
 
-Happy coding! 💻✨  
-```
+Happy coding! 💻✨
