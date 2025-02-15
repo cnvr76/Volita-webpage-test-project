@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Activities from "./components/Activities";
 import Blog from "./components/Blog";
+import PartnersSection from "./components/PartnersSection";
 import "./styles/main.scss";
 import "./styles/header.scss";
 import "./styles/navbar.scss";
@@ -11,6 +12,7 @@ import "./styles/hero.scss";
 import "./styles/activities.scss";
 import "./styles/CarouselComponent.scss";
 import "./styles/blog.scss";
+import "./styles/partners.scss";
 
 import icon1 from "./assets/icons/icon-1.svg";
 import icon2 from "./assets/icons/icon-2.svg";
@@ -22,6 +24,8 @@ import blogImage2 from "./assets/blog/blog-2.jpg";
 import blogImage3 from "./assets/blog/blog-3.jpg";
 import blogImage4 from "./assets/blog/blog-4.jpg";
 import blogImage5 from "./assets/blog/blog-5.jpg";
+
+import partnerImage from "./assets/team-1.jpg";
 
 const cardData = [
   {
@@ -82,13 +86,27 @@ const blogCardInfo = [
   },
 ];
 
+const partnersInfo = [];
+for (let i = 0; i < 6; i++) {
+  partnersInfo.push({
+    image: partnerImage,
+    name: "Meno Priezvisko",
+    position: "Pozícia",
+  });
+}
+
 function App() {
   return (
     <div>
       <Header />
-      <Hero />
-      <Activities cardData={cardData} />
-      <Blog blogCardInfo={blogCardInfo} />
+      <div className="bg1">
+        <Hero />
+        <Activities cardData={cardData} />
+        <Blog blogCardInfo={blogCardInfo} />
+      </div>
+      <div className="bg2">
+        <PartnersSection partnersInfo={partnersInfo} />
+      </div>
     </div>
   );
 }

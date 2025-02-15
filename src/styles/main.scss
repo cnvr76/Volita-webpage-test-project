@@ -33,9 +33,31 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("../assets/background-1.jpg");
+}
+
+@mixin bg {
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: -5;
+}
+
+.bg1 {
+  @include bg;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../assets/background-1.jpg");
+}
+
+.bg2 {
+  @include bg;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("../assets/background-2.jpg");
 }
 
 img {

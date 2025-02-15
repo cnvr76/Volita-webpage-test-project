@@ -31,7 +31,9 @@ function Blog({ blogCardInfo }) {
               />
             ))}
           </div>
-          <button>Prejsť na blog</button>
+          <div className="btn">
+            <button>Prejsť na blog</button>
+          </div>
         </div>
 
         <div className="about-container">
@@ -50,7 +52,7 @@ function Blog({ blogCardInfo }) {
             </p>
             <button>Zobraziť viac</button>
           </div>
-          <img src={aboutImage} alt="About Us Image" />
+          <img draggable="false" src={aboutImage} alt="About Us Image" />
         </div>
       </div>
 
