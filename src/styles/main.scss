@@ -1,7 +1,8 @@
 :root {
-  --blue: #0842c0;
-  --yellow: #f1a124;
-  --black: #0e1422;
+  --blue: rgb(8, 66, 192);
+  --yellow: rgb(241, 161, 36);
+  --black: rgb(14, 20, 34);
+  --black-rgb: 14, 20, 34;
 }
 
 @font-face {
@@ -32,7 +33,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background: url("../assets/background-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 img {

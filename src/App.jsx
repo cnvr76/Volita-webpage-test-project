@@ -3,17 +3,25 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Activities from "./components/Activities";
+import Blog from "./components/Blog";
 import "./styles/main.scss";
 import "./styles/header.scss";
 import "./styles/navbar.scss";
 import "./styles/hero.scss";
 import "./styles/activities.scss";
 import "./styles/CarouselComponent.scss";
+import "./styles/blog.scss";
 
 import icon1 from "./assets/icons/icon-1.svg";
 import icon2 from "./assets/icons/icon-2.svg";
 import icon3 from "./assets/icons/icon-3.svg";
 import icon4 from "./assets/icons/icon-4.svg";
+
+import blogImage1 from "./assets/blog/blog-1.jpg";
+import blogImage2 from "./assets/blog/blog-2.jpg";
+import blogImage3 from "./assets/blog/blog-3.jpg";
+import blogImage4 from "./assets/blog/blog-4.jpg";
+import blogImage5 from "./assets/blog/blog-5.jpg";
 
 const cardData = [
   {
@@ -46,12 +54,41 @@ const cardData = [
   },
 ];
 
+const blogCardInfo = [
+  {
+    image: blogImage1,
+    title: "Novinky",
+    description: "Nulla facilisi. Donec ligua libero",
+  },
+  {
+    image: blogImage2,
+    title: "Novinky",
+    description: "Nulla facilisi. Donec ligua libero",
+  },
+  {
+    image: blogImage3,
+    title: "Pribehy",
+    description: "Nulla facilisi. Donec ligua libero",
+  },
+  {
+    image: blogImage4,
+    title: "Pribehy",
+    description: "Nulla facilisi. Donec ligua libero",
+  },
+  {
+    image: blogImage5,
+    title: "Novinky",
+    description: "Nulla facilisi. Donec ligua libero",
+  },
+];
+
 function App() {
   return (
     <div>
       <Header />
       <Hero />
       <Activities cardData={cardData} />
+      <Blog blogCardInfo={blogCardInfo} />
     </div>
   );
 }
