@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Activities from "./components/Activities";
 import Blog from "./components/Blog";
 import PartnersSection from "./components/PartnersSection";
+import Footer from "./components/Footer";
 import "./styles/main.scss";
 import "./styles/header.scss";
 import "./styles/navbar.scss";
@@ -13,6 +14,7 @@ import "./styles/activities.scss";
 import "./styles/CarouselComponent.scss";
 import "./styles/blog.scss";
 import "./styles/partners.scss";
+import "./styles/footer.scss";
 
 import icon1 from "./assets/icons/icon-1.svg";
 import icon2 from "./assets/icons/icon-2.svg";
@@ -107,6 +109,7 @@ function App() {
       <div className="bg2">
         <PartnersSection partnersInfo={partnersInfo} />
       </div>
+      <Footer />
     </div>
   );
 }
