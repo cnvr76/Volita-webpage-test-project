@@ -1,0 +1,25 @@
+.carousel {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+
+  @mixin carousel-indicators {
+    width: 150px;
+    height: 8px;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .carousel-indicators button {
+    @include carousel-indicators;
+    background-color: rgba(255, 255, 255);
+    border: none;
+  }
+
+  .carousel-indicators .active {
+    @include carousel-indicators;
+    background-color: var(--yellow);
+  }
+}
