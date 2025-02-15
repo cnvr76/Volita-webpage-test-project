@@ -1,21 +1,90 @@
 .activities {
   text-align: center;
-  padding: 50px 0;
+  padding: 20px 0;
   background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 45px;
+
+  .introduction {
+    @mixin introduction {
+      font-weight: 700;
+      font-family: inherit;
+    }
+
+    h4 {
+      @include introduction;
+      color: var(--yellow);
+      font-size: 1.2rem;
+    }
+
+    h2 {
+      @include introduction;
+      color: var(--blue);
+      font-size: 1.8rem;
+    }
+  }
 
   .cards {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: row;
+    gap: 15px;
   }
 
   .card {
-    img {
-      width: 3rem;
-    }
+    width: 250px;
+    height: 370px;
     background: white;
-    padding: 20px;
+    border: none;
+    padding: 40px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    overflow: hidden;
+    gap: 10px;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 2.8rem;
+      }
+
+      h3 {
+        color: var(--blue);
+        font-weight: 700;
+        font-size: 1.3rem;
+        text-align: start;
+      }
+
+      p {
+        font-size: 0.7rem;
+        color: var(--black);
+        text-align: start;
+        margin: 0;
+      }
+    }
+
+    button {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 0.8rem;
+      color: white;
+      background-color: var(--yellow);
+      border: none;
+      border-radius: 6px;
+      padding: 10px 20px;
+      width: 100%;
+    }
   }
 }

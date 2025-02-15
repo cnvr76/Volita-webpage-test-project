@@ -13,11 +13,20 @@
     width: fit-content;
   }
 
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
   .highlight {
+    display: block;
     color: var(--yellow);
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 15px 0;
   }
 
   .btn-primary {
+    margin-top: 40px;
     background: var(--yellow);
     padding: 10px 50px;
     text-transform: uppercase;
@@ -40,6 +49,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, var(--blue) 0%, rgba(0, 0, 0, 0) 100%);
+      pointer-events: none;
+    }
+
     img {
       width: 100%;
       height: 100%;

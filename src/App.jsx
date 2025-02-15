@@ -19,22 +19,30 @@ const cardData = [
   {
     icon: icon1,
     title: "Pomoc cez Okno",
-    description: "Podporujeme pomoc ľuďom v núdzi.",
+    description:
+      "Držíme sa motta „Nemôžeme pomôcť každému, no každý môže pomôcť niekomu.“ Pomáhame vybraným rodinám aj jednotlivcom, ktorí potrebujú finančnú, alebo inú materiálnu pomoc.",
+    additional: "",
   },
   {
     icon: icon2,
     title: "Vzdelávanie",
-    description: "Podporujeme školenia a kurzy.",
+    description:
+      "Pripravujeme rôzne propagačné kampane, ktorých súčasťou je aj vzdelávanie verejnosti.",
+    additional: "",
   },
   {
     icon: icon3,
     title: "Životné prostredie",
-    description: "Ekologické iniciatívy.",
+    description:
+      "Ponúkame našim partnerom možnosť zapojiť sa do rôznych aktivít zameraných na ochranu životného prostredia.",
+    additional: "",
   },
   {
     icon: icon4,
     title: "Zbierky",
-    description: "Organizujeme zbierky a projekty.",
+    description:
+      "V rámci nášho posledného projektu „crashtest“ sme spustili zbierku pre sociálne slabšie rodiny.",
+    additional: "Za každé vysersivované okno prispievame 0,10 EUR.",
   },
 ];
 
