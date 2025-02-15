@@ -14,7 +14,7 @@
 
   .carousel-indicators button {
     @include carousel-indicators;
-    background-color: rgba(255, 255, 255);
+    background-color: white;
     opacity: 1;
     border: none;
   }

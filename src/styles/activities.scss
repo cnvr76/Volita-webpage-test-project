@@ -29,10 +29,15 @@
   flex-direction: column;
   gap: 45px;
   overflow: hidden;
+  margin-bottom: 60px;
 
   .cards {
-    display: flex;
-    flex-direction: row;
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
   }
 
@@ -89,5 +94,22 @@
       padding: 10px 20px;
       width: 100%;
     }
+  }
+}
+
+@media (max-width: 1092px) {
+  .activities {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+      .card .info button {
+        font-size: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .activities .cards {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
